@@ -1,4 +1,44 @@
-h1 {
-    color: blue;
-    color: rgba(0, 0, 255, 0.5);
+body {
+    /* color: blue; */
+    color: rgba(0, 0, 255, 1);
+    font-family: Verdana, sans-serif;
+    /* margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px; */
+    /* margin: 0px; */
+    margin: 0;
+}
+
+header {
+  /* background-color: pink; */
+  text-align: right;
+  padding: 10px 10px 150px 10px;
+  background-image: url(../img/header.png);
+  height: 240px;
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-bottom: 60px;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+header li {
+  display: inline-block;
+  /* padding-top: 4;
+  padding-bottom:4;
+  padding-right: 8;
+  padding-left: 8; */
+  padding: 4px 8px;
+  font-size: 15px;
+}
+header li > a {
+  text-decoration: none;
+  color: black;
+}
+header li > a:hover {
+  color: royalblue;
 }
