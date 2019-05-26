@@ -35,6 +35,10 @@ header li {
   padding: 4px 8px;
   font-size: 15px;
 }
+
+.current {
+  border-bottom: 4px solid royalblue;
+}
 header li > a {
   text-decoration: none;
   color: black;
@@ -63,6 +67,7 @@ section p {
 }
 
 /* section > img とすると index.htmlのcssはどのイメージタグか認識できないのでclass属性をきめてあげて特定できるようにしてあげる */
+
 .icon {
   /* border-radius: 70px; 辺140の半分 */
   border-radius: 50%;
@@ -82,7 +87,7 @@ section p {
 
 .works {
   width: 400px;
-  margin: 60px 0px 60px 0;
+  margin: 60px auto;
   border-bottom: 1px solid gray;
 }
 
@@ -97,4 +102,38 @@ section p {
 
 .works > section {
   margin-bottom: 40px;
+}
+
+footer {
+  width: 400px;
+  margin: 0px auto 100px;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: left;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 5px;
+  font-size: 15px;
+}
+
+footer li > a:hover {
+  opacity: 0.6;
+}
+footer p {
+  color: gray;
+  text-align: right;
+}
+
+.about {
+  width: 400px;
+  margin: 0px auto 40px;
+}
+
+.about p {
+  text-align: left;
 }
