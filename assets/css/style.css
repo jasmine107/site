@@ -18,3 +18,7 @@ em {
 section.two em {
     color:red;
 }
+
+h1,h2 {
+    font-size: 30px;
+}
