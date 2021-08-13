@@ -1,0 +1,17 @@
+h1 {
+  background: bisque;
+}
+p {
+  background: blanchedalmond;
+}
+ul {
+  background: burlywood;
+}
+li {
+  display: inline-block;
+  background: cadetblue;
+}
+a {
+  display: block;
+  background: chartreuse;
+}
