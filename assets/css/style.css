@@ -14,3 +14,7 @@ h1 {
 em {
     font-weight: bold;
 }
+
+section.two em {
+    color:red;
+}
