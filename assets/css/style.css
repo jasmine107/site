@@ -14,3 +14,17 @@ h1 {
 em {
     font-weight: bold;
 }
+
+.bold-blue {
+    font-size: 0.925em;
+    font-weight: bold;
+    color: blue;
+}
+img {
+    width: 200px;
+}
+
+video {
+    width: 680px;
+}
+
