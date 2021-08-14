@@ -1,46 +1,4 @@
 @charset "utf-8";
-*{
-    color: black;
-}
-
-section {
-    background-color: #3eb6bd;
-}
-
-h1 {
-    color: white;
-}
-
-em {
-    font-weight: bold;
-}
-
-img {
-    width: 200px;
-}
-
-.red {
-    color: red;
-}
-video {
-    width: 200px;
-}
-
-p {
-    background: #3eb6bd;
-    width: 300px;
-    height: 600px;
-}
-
-figure {
-    background: black;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-figcaption {
-    color: white;
-}
 
 *{ box-sizing: border-box;}
 
