@@ -15,41 +15,58 @@ em {
     font-weight: bold;
 }
 
-.bold-blue {
-    font-size: 0.925em;
-    font-weight: bold;
-    color: blue;
-}
 img {
     width: 200px;
 }
 
+.red {
+    color: red;
+}
 video {
     width: 200px;
 }
 
-audio {
-    width: 600px;
-    background: black;
-}
-
-a {
-    background: red;
-}
-
 p {
-    width: 600px;
-    background: blanchedalmond;
+    background: #3eb6bd;
+    width: 300px;
+    height: 600px;
 }
 
-ul {
-    width: 600px;
-    background: blanchedalmond;
+figure {
+    background: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
 }
-/* 
-li {
-    width: 600px;
-    background: blanchedalmond;
+figcaption {
+    color: white;
 }
-*/
 
+*{ box-sizing: border-box;}
+
+ul.gnav-list-1 {
+    background: #1b9aaa;
+    padding: 0;
+    text-align: center;
+}
+
+ul.gnav-list-1 li {
+    display: inline-block;
+}
+
+ul.gnav-list-1 li a {
+    display: block;
+    color: white;
+    padding: 1em;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+ul.gnav-list-1 li a::first-line {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ul.gnav-list-1 li a:hover {
+    background: #14727e;
+}
