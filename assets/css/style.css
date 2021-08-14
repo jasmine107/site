@@ -25,6 +25,31 @@ img {
 }
 
 video {
-    width: 680px;
+    width: 200px;
 }
+
+audio {
+    width: 600px;
+    background: black;
+}
+
+a {
+    background: red;
+}
+
+p {
+    width: 600px;
+    background: blanchedalmond;
+}
+
+ul {
+    width: 600px;
+    background: blanchedalmond;
+}
+/* 
+li {
+    width: 600px;
+    background: blanchedalmond;
+}
+*/
 
