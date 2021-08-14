@@ -14,3 +14,42 @@ h1 {
 em {
     font-weight: bold;
 }
+
+.bold-blue {
+    font-size: 0.925em;
+    font-weight: bold;
+    color: blue;
+}
+img {
+    width: 200px;
+}
+
+video {
+    width: 200px;
+}
+
+audio {
+    width: 600px;
+    background: black;
+}
+
+a {
+    background: red;
+}
+
+p {
+    width: 600px;
+    background: blanchedalmond;
+}
+
+ul {
+    width: 600px;
+    background: blanchedalmond;
+}
+/* 
+li {
+    width: 600px;
+    background: blanchedalmond;
+}
+*/
+
