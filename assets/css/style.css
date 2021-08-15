@@ -1,6 +1,98 @@
 @charset "utf-8";
 
-*{ box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+    /* box-sizing: content-box; */
+}
+
+/* 210815 ====================================== */
+
+div {
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+    padding: 50px;
+    /* border: solid 1px black; */
+    background: bisque;
+}
+
+html {
+    font-size: 30px;
+}
+
+body {
+    font-size: 15px;
+}
+
+section {
+    font-size: 10px;
+}
+
+h1{
+    font-size: 10em;
+}
+
+h1.rem {
+    font-size: 10rem;
+}
+
+p.confirm {
+    font-size: 20px;
+}
+
+ul {
+    font-size: 10px;
+}
+li {
+    font-size: 0.8em;
+}
+
+article {
+    width: 680px;
+    background: blanchedalmond;
+}
+
+article::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+img {
+    float: right;
+    width: 360px;
+}
+
+.prefix {
+    width: 680px;
+    color: blue;
+}
+
+.postword {
+    width: 680px;
+    color:brown;
+}
+
+.prefix::before {
+    content: "Quote";
+    font-size: 0.8em;
+    margin-right: 0.5em;
+    padding: 0.1em 0.5em;
+    color: #fff;
+    background: blue;
+}
+
+.postword::after {
+    content: "インデックス参照";
+    font-size: 0.7em;
+    font-weight: bold;
+    margin-right: 0.5em;
+    padding: 0.15em 0.5em;
+    color: #fff;
+    background: red;
+}
+
+/* ============================================ */
 
 ul.gnav-list-1 {
     background: #1b9aaa;
