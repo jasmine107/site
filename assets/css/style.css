@@ -47,6 +47,51 @@ li {
     font-size: 0.8em;
 }
 
+article {
+    width: 680px;
+    background: blanchedalmond;
+}
+
+article::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+img {
+    float: right;
+    width: 360px;
+}
+
+.prefix {
+    width: 680px;
+    color: blue;
+}
+
+.postword {
+    width: 680px;
+    color:brown;
+}
+
+.prefix::before {
+    content: "Quote";
+    font-size: 0.8em;
+    margin-right: 0.5em;
+    padding: 0.1em 0.5em;
+    color: #fff;
+    background: blue;
+}
+
+.postword::after {
+    content: "インデックス参照";
+    font-size: 0.7em;
+    font-weight: bold;
+    margin-right: 0.5em;
+    padding: 0.15em 0.5em;
+    color: #fff;
+    background: red;
+}
+
 /* ============================================ */
 
 ul.gnav-list-1 {
