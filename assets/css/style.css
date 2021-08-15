@@ -1,6 +1,53 @@
 @charset "utf-8";
 
-*{ box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+    /* box-sizing: content-box; */
+}
+
+/* 210815 ====================================== */
+
+div {
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+    padding: 50px;
+    /* border: solid 1px black; */
+    background: bisque;
+}
+
+html {
+    font-size: 30px;
+}
+
+body {
+    font-size: 15px;
+}
+
+section {
+    font-size: 10px;
+}
+
+h1{
+    font-size: 10em;
+}
+
+h1.rem {
+    font-size: 10rem;
+}
+
+p.confirm {
+    font-size: 20px;
+}
+
+ul {
+    font-size: 10px;
+}
+li {
+    font-size: 0.8em;
+}
+
+/* ============================================ */
 
 ul.gnav-list-1 {
     background: #1b9aaa;
