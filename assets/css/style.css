@@ -44,6 +44,7 @@ li {
 /* ============================================ */
 
 ul.gnav-list-1 {
+    margin: 0;
     background: #1b9aaa;
     padding: 0;
     text-align: center;
