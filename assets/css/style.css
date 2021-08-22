@@ -63,14 +63,33 @@ ul.gnav-list-1 li a:hover {
     background: #14727e;
 }
 
-/* ul {
-    width: 300px;
-    height: 100px;
+ul.center {
+    width: 500px;
     background: cadetblue;
-} */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+ul.center li {
+    /* display: inline-block; */
+    /* margin: 0 auto; */
+    /* リストは一部ブロック性質を持つがブロック性質ではない。 */
+    padding: 10px 0 ;
+    display: block;
+}
+    
 
-/* ul li {
-    width: 300px;
-    height: 100px;
-    background: coral;
-} */
+
+ul.center2 {
+    width: 500px;
+    background: cadetblue;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+
+}
+
+ul.center2 li {
+    display: inline-block;
+    padding: 10px 20px;
+    
+}
