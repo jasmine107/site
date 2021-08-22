@@ -32,38 +32,11 @@ img {
     width: 360px;
 }
 
-.prefix {
-    width: 680px;
-    color: blue;
-}
-
-.postword {
-    width: 680px;
-    color:brown;
-}
-
-.prefix::before {
-    content: "Quote";
-    font-size: 0.8em;
-    margin-right: 0.5em;
-    padding: 0.1em 0.5em;
-    color: #fff;
-    background: blue;
-}
-
-.postword::after {
-    content: "インデックス参照";
-    font-size: 0.7em;
-    font-weight: bold;
-    margin-left: 0.5em;
-    padding: 0.15em 0.5em;
-    color: #fff;
-    background: red;
-}
 
 /* ============================================ */
 
 ul.gnav-list-1 {
+    margin: 0;
     background: #1b9aaa;
     padding: 0;
     text-align: center;
@@ -89,3 +62,15 @@ ul.gnav-list-1 li a::first-line {
 ul.gnav-list-1 li a:hover {
     background: #14727e;
 }
+
+/* ul {
+    width: 300px;
+    height: 100px;
+    background: cadetblue;
+} */
+
+/* ul li {
+    width: 300px;
+    height: 100px;
+    background: coral;
+} */
