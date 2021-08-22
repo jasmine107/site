@@ -1,10 +1,15 @@
 @charset "utf-8";
 
+html {
+    font-size: 15px;
+    line-height: 1.7;
+}
 * {
     box-sizing: border-box;
     /* box-sizing: content-box; */
+    margin: 0;
+    padding: 0;
 }
-
 
 ul.gnav-list-1 {
     margin: 0;
@@ -34,3 +39,15 @@ ul.gnav-list-1 li a:hover {
     background: #14727e;
 }
 
+div {
+    padding: 1rem;
+    text-align: center;
+}
+
+p {
+    /* margin: 0 auto; */
+}
+
+img, span {
+    vertical-align: middle;
+}
