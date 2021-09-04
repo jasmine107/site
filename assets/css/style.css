@@ -3,6 +3,8 @@
 * {
     box-sizing: border-box;
     /* box-sizing: content-box; */
+    margin: 0;
+    padding: 0;
 }
 
 /* 210815 ====================================== */
@@ -11,27 +13,81 @@ body {
     font-size: 15px;
 }
 
+/* flexboxを使った中央寄せ */
+div.contener {
+    background: cornsilk;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+}
 h1{
-    font-size: 2em;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    /* border: 10px solid blue; */
+    font-size: 1em;
+}
+
+h1.red {
+    background: crimson;
+    /* height: 20px; */
+    /* padding: 0; */
+    /* margin-bottom: 0; */
+}
+
+h1.green {
+    background: darkgreen;
+    /* margin-top: 0; */
+}
+
+h1.blue {
+    background: blue;
+    /* height: 50px; */
+    /* margin-top: 0; */
 }
 
 
-article {
-    width: 680px;
-    background: blanchedalmond;
+div {
+    width: 100%;
+    padding: 1em;
+    background: #eee;
 }
 
-article::after {
-    content: "";
-    display: block;
-    clear: both;
+p {
+    width: 200px;
+    height: 200px;
+    background: #ff0;
+    color: #ef476f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-img {
-    float: right;
-    width: 360px;
+span {
+    font-size: 20px;
 }
 
+img, span {
+    vertical-align: middle;
+}
+
+/* positionとtransformを使った中央寄せ */
+div.t2 {
+    position: relative;
+    height: 300px;
+    background: cornflowerblue;
+}
+
+div.t2 p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /* ============================================ */
 
@@ -93,3 +149,26 @@ ul.center2 li {
     padding: 10px 20px;
     
 }
+
+/* marginとbodderとpaddingの復習 */
+h2{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 10px solid blue;
+    font-size: 1em;
+}
+
+h2.red {
+    background: crimson;
+    /* height: 20px; */
+    /* padding: 0; */
+    /* margin-bottom: 0; */
+}
+
+h2.green {
+    background: darkgreen;
+    /* margin-top: 0; */
+}
+
