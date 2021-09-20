@@ -45,46 +45,28 @@ ul.gnav-list-1 li a:hover {
     background: #14727e;
 }
 
-section {
-    width: 90%;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    margin: 40px auto 0;
-    border: 1px dashed #ccc;
-    text-align: center;
+ul {list-style: none;}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
-h2 {margin-bottom: 1em;}
-
-.flex-container {
-    display: flex;
-    justify-content: space-around;
-    /* justify-content: flex-start; */
-    /* justify-content: flex-end; */
-    /* justify-content: center; */
-    /* justify-content: space-between; */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
 }
 
-.flex-item {
-    background: #09b;
-    color: #fff;
-    padding: 1em;
-    flex-basis: 30%;
+@media screen and (max-width: 650px) {
+    .container {
+        width: 320px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
 }
-
-.flex-item dt{
-    margin-bottom: 10px;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-@media screen and (max-width:480px) {
-    h2 {font-size: 1.1em;}
-    .flex-container {flex-direction: column;}
-    .flex-item {margin: 0 1em 1em;}
-}
-
-/* text-align: center　はテキスト（インライン性質）に適用されるが、
-CSSにおいてブロック性質（sectionなど）を持つ要素に記述してもその
-ブロック性質を持つ要素には適用されないが、その中身については効力を
-持つ */
