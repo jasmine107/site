@@ -13,19 +13,20 @@ body {
     font-size: 15px;
 }
 
-
+nav {
+    width: 100vw;
+}
 
 /* ============================================ */
 
-ul.gnav-list-1 {
-    margin: 0;
+ul {
     background: #1b9aaa;
-    padding: 0;
     text-align: center;
 }
 
 ul.gnav-list-1 li {
     display: inline-block;
+    position: relative;
 }
 
 ul.gnav-list-1 li a {
@@ -34,39 +35,34 @@ ul.gnav-list-1 li a {
     padding: 1em;
     font-size: 12px;
     text-decoration: none;
-}
+} 
 
 ul.gnav-list-1 li a::first-line {
     font-size: 16px;
     font-weight: bold;
 }
 
+ul li a::after {
+    content: url(../img/arrow.png);
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
 ul.gnav-list-1 li a:hover {
     background: #14727e;
 }
 
-ul {list-style: none;}
-
-img {
-    display: block;
-    max-width: 100%;
+ul.sub-list {
+    position: absolute;
+    top:100%;
+    left: 0;
+    display: none;
 }
 
-.container {
+ul.sub-list li{
     width: 100%;
-    max-width: 1000px;
-    margin: 20px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 20px;
 }
 
-@media screen and (max-width: 650px) {
-    .container {
-        width: 320px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-gap: 10px;
-    }
+ul.gnav-list-1 li:hover>ul.sub-list{
+    display: block;
 }
