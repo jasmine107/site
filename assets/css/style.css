@@ -17,6 +17,26 @@ nav {
     width: 100vw;
 }
 
+div {
+    width: 100%;
+    height: 80vh;
+    border: 1px solid #ccc;
+    margin-bottom: 20vh;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+article {
+    width: 49vh;
+    height: 49vh;
+    border: 1px solid #ccc;
+    margin-bottom: 2vh;
+}
 /* ============================================ */
 
 ul {
@@ -66,3 +86,24 @@ ul.sub-list li{
 ul.gnav-list-1 li:hover>ul.sub-list{
     display: block;
 }
+
+.bg-001 {
+    background: url("../img/bg-stripe.png") left center repeat;
+}
+
+/* .bg-001 {
+    background: url("../img/bg-stripe.png") repeat;
+} */
+
+
+.bg-002 {
+    background: #98807b url("../img/bg-cat.png") center bottom no-repeat;
+}
+
+.container div {
+    background: url("../img/bg-cat.png") right bottom no-repeat;
+}
+article .px {background-size: 150px 50px;}
+article .per {background-size: 50% 50%;}
+article .cover {background-size: cover;}
+article .contain {background-size: contain;}
