@@ -4,6 +4,7 @@ html {
     font-size: 15px;
     line-height: 1.7;
 }
+
 * {
     box-sizing: border-box;
     /* box-sizing: content-box; */
@@ -11,15 +12,14 @@ html {
     padding: 0;
 }
 
-ul.gnav-list-1 {
-    margin: 0;
+ul {
     background: #1b9aaa;
-    padding: 0;
     text-align: center;
 }
 
 ul.gnav-list-1 li {
     display: inline-block;
+    position: relative;
 }
 
 ul.gnav-list-1 li a {
@@ -28,15 +28,36 @@ ul.gnav-list-1 li a {
     padding: 1em;
     font-size: 12px;
     text-decoration: none;
-}
+} 
 
 ul.gnav-list-1 li a::first-line {
     font-size: 16px;
     font-weight: bold;
 }
 
+ul li a::after {
+    content: url(../img/arrow.png);
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
 ul.gnav-list-1 li a:hover {
     background: #14727e;
+}
+
+ul.sub-list {
+    position: absolute;
+    top:100%;
+    left: 0;
+    display: none;
+}
+
+ul.sub-list li{
+    width: 100%;
+}
+
+ul.gnav-list-1 li:hover>ul.sub-list{
+    display: block;
 }
 
 /* container1 */
@@ -91,3 +112,4 @@ ul.gnav-list-1 li a:hover {
 .container2 .contain {
     background-size: contain;
 }
+
