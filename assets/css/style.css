@@ -1,23 +1,16 @@
 @charset "utf-8";
 
+html {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
 * {
     box-sizing: border-box;
     /* box-sizing: content-box; */
     margin: 0;
     padding: 0;
 }
-
-/* 210815 ====================================== */
-
-body {
-    font-size: 15px;
-}
-
-nav {
-    width: 100vw;
-}
-
-/* ============================================ */
 
 ul {
     background: #1b9aaa;
@@ -66,3 +59,57 @@ ul.sub-list li{
 ul.gnav-list-1 li:hover>ul.sub-list{
     display: block;
 }
+
+/* container1 */
+.container1 div {
+    display: block;
+    width: 100%;
+    height: 80vh;
+    border: 1px solid #ccc;
+    margin-bottom: 20vh;
+}
+
+.bg-002 p {
+    color: #fff;
+}
+
+/*背景の設定*/
+.bg-001 {
+    background: url("../img/bg-stripe.png") left center repeat;
+}
+.bg-002 {
+    background: #98807b url("../img/bg-cat.png") center bottom no-repeat;
+}
+
+
+/* container2 */
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container2 div{
+    width: 49vw;
+    height: 49vw;
+    border: 1px solid #ccc;
+    margin-bottom: 2vw;
+}
+
+/*背景の設定*/
+.container2 div {
+    background: url("../img/bg-cat-light.png") right bottom no-repeat;
+}
+.container2 .px {
+    background-size: 150px 50px;
+}
+.container2 .per {
+    background-size: 50% 50%;
+}
+.container2 .cover {
+    background-size: cover;
+}
+.container2 .contain {
+    background-size: contain;
+}
+
